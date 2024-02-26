@@ -10,35 +10,15 @@ import { LoginUser } from './login';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  credentials = {email:'',password:''}
+  // You may define properties or methods as needed
 
-loginForm:FormGroup;
+  isRegisterActive: boolean = false;
 
-  constructor(private fb:FormBuilder,private loginService:LoginService,private toast:ToastrService) { 
-    this.loginForm = this.fb.group({
-      email: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-    });
+  togglePanel() {
+    this.isRegisterActive = !this.isRegisterActive;
   }
+}
+
   
-  public loginFormControls(){
-    return this.loginForm.controls;
-  }
-  public data: LoginUser = {
-    email: '',
-    password: '',
-  };
-  onSubmit() {
-    this.loginService.loginUser(this.data).subscribe(
-      (response) => {
-        this.toast.success('successfully login');
-        localStorage.setItem(
-          'currentUser',
-          JSON.stringify({ token: response, name: name })
-        );
-      },
-      (error) => {
-        console.error('Error Login contact:', error);
-      }
-    );
-}}
+
+
