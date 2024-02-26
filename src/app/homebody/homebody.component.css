@@ -1,0 +1,302 @@
+body {
+    font-family:"Audiowide", sans-serif;
+    padding: 0px;
+    margin: p;
+}
+
+.hero-section {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Adjusted padding to be smaller */
+    transition: padding 0.3s ease-in-out; /* Added animation to the padding */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add hover effect for demonstration */
+.hero-section:hover {
+    padding: 70px 0; /* Adjusted padding on hover */
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.service-column {
+    flex: 1;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box i {
+    font-size: 36px;
+    color: #007bff;
+}
+
+.big-number {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Section Styles */
+.elementor-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Column Styles */
+.elementor-column {
+    width: 30%; /* Adjust as needed */
+    padding: 20px;
+}
+
+/* Service Box Styles */
+.service-box-s2 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Number Box Styles */
+.number-box {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Content Box Styles */
+.content-box {
+    margin-top: 15px;
+}
+
+h5 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0;
+}
+
+
+  
+  .custom-section {
+    padding: 100px 10px;
+    text-align: center;
+  }
+  
+  .why-us-heading {
+    color: #3498db;
+    margin-bottom: 30px;
+  }
+  
+  .custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .custom-card {
+    width: 300px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+  
+  h5 {
+    margin-top: 0;
+    color: #3498db;
+  }
+  
+  p {
+    margin: 0;
+    color: #bdc3c7;
+  }
+
+  
+  .home-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+    margin-top: 50px; /* Added more margin on top */
+}
+
+.banner-description h1 {
+    font-size: 50px; /* Increased font size */
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold font */
+}
+
+.banner-description p {
+    font-size: 30px; /* Increased font size */
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.banner-buttons {
+    display: flex;
+}
+
+.banner-button {
+    display: inline-block;
+    padding: 20px 40px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Added transition effect */
+    margin-right: 15px;
+    background-color: #4CAF50;
+}
+
+.banner-button-primary {
+    background-color: #4CAF50;
+}
+
+.banner-button-secondary {
+    background-color: #3498db;
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 50px; /* Increased margin on top of the image */
+}
+
+@media (max-width: 768px) {
+    .home-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .banner-description {
+        margin-right: 0;
+    }
+
+    .banner-buttons {
+        margin-top: 20px;
+    }
+}
+
+/* Reset some default styles */
+
+
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px;
+}
+
+.bg-gray-4 {
+    background-color: #f4f4f4;
+}
+
+/* Title Styles */
+.section-title {
+    text-align: center;
+}
+
+.small-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Logos Grid Styles */
+.grid-logo-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-row-image {
+    margin: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    .logo-row-image {
+        width: 100%;
+        max-width: 150px; /* Adjust the max-width as needed */
+    }
+}
+
+

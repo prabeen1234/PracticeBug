@@ -1,0 +1,33 @@
+<div class="form-container">
+  <h2>SignUp</h2>
+  <form (ngSubmit)="saveUser()">
+    <div class="form-group">
+      <label for="firstName">firstname:</label>
+      <input type="text" id="firstName" #firstname="ngModel" [class.is-invalid]="firstname.invalid && firstname.touched" class="form-control" name="firstName" placeholder="Enter your firstname" [(ngModel)]="data.firstName" required>
+     <small [class.d-none]="firstname.valid || firstname.untouched">firstname is required</small>
+    </div>
+
+  <div class="form-group">
+      <label for="lastName">lastname:</label>
+      <input type="text" id="lastName" #lastname="ngModel" [class.is-invalid]="lastname.invalid && lastname.touched" class="form-control" name="lastName" placeholder="Enter your lastname" [(ngModel)]="data.lastName" required>
+     <small [class.d-none]="lastname.valid || lastname.untouched">lastname is required</small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" #email="ngModel" [class.is-invalid]="email.invalid && email.touched" id="email" name="email" [(ngModel)]="data.email" class="form-control" placeholder="Enter your email" required />
+      <small [class.d-none]="email.valid || email.untouched">email is required</small>
+    </div>
+
+  <div class="form-group">
+      <label for="password">password:</label>
+      <input type="password" #password="ngModel" [class.is-invalid]="password.invalid && password.touched" id="password" name="password" [(ngModel)]="data.password" class="form-control" placeholder="Enter your password" required />
+      <small [class.d-none]="password.valid || password.untouched">password is required</small>
+    </div>
+
+    <button type="submit" class="submit-btn">SignUp</button>
+    <div>
+<li> Already Registered?<a href="" ></a></li>>    </div>
+  
+  </form>
+</div>
